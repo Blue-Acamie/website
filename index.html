@@ -35,17 +35,50 @@
                 </div>
                 <div class="row course_holder mt-5">
                     <div class="col-lg-4 col-md-6 col-xs-12 course">
-                        <img src="images/post-it.png" class="post_it" alt="" />
-                        <img src="images/pin-red.png" class="pin" alt="" />
-                        <h2 class="course_name">
-                            Gencler Ingilizce Ögreniyor - A2
-                        </h2>
+                        <button onclick="togglePopup()">
+                            <img
+                                src="images/post-it.png"
+                                class="post_it"
+                                alt=""
+                            />
+                            <img src="images/pin-red.png" class="pin" alt="" />
+                            <h2 class="course_name">
+                                Gencler Ingilizce Ögreniyor - A2
+                            </h2>
+                        </button>
+                        <div class="full_screen hidden flex_container_center">
+                            <br />
+                            <button
+                                onclick="togglePopup()"
+                                class="fixed_button"
+                            >
+                                &times;
+                            </button>
+                            <br />
+                            <h2 class="popup_course_name">
+                                Kurs Adi: Gencler Ingilizce Ögreniyor - A2
+                            </h2>
+                            <h4 class="popup_course_targets">
+                                Eğitim Hedefleri:
+                            </h4>
+                            <ul class="popup_list">
+                                <li>
+                                    <p>
+                                        Dil yeteneğini erken yaşta kazandırmak
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>A2 seviyesinde İngilizce öğretmek</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12 course">
                         <img src="images/post-it.png" class="post_it" alt="" />
-                        <img src="images/pin-blue.png" class="pin" alt="" />
+                        <img src="images/pin-yellow.png" class="pin" alt="" />
                         <h2 class="course_name">
-                            Cocuklar Ingilizce Ögreniyor
+                            <span class="pop_up_alert"> POP UP</span> acilmasi icin soldaki
+                            post-it'in herhangi bir yerine tiklayiniz.
                         </h2>
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12 course">
@@ -73,5 +106,6 @@
                 </div>
             </div>
         </main>
+        <script src="js/app.js"></script>
     </body>
 </html>

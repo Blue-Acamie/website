@@ -3,19 +3,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 10%;
 }
 
 h1 {
     font-weight: bolder;
-    transition: all 300ms;
-}
-
-h1:hover,
-h1:active {
-    border-bottom: 2px solid #d73530;
-    transform: translate3d(0px, -10px, 0px);
 }
 
 .course {
@@ -81,4 +74,48 @@ h1:active {
 .course_name:active {
     text-shadow: 1px 1px #000;
     cursor: help;
+}
+
+.full_screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.flex_container_center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; ORTALAMA ICIN */
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.popup_course_name {
+    color: #d73530;
+}
+
+.popup_course_targets {
+    color: #7cb518;
+}
+
+.popup_list {
+    text-align: left;
+}
+
+.pop_up_alert {
+    font-weight: bold;
+    color: #7cb518;
 }
